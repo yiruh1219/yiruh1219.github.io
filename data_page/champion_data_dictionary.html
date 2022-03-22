@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>champion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril Fatface');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson Pro');
+        @import url('https://fonts.googleapis.com/css2?family=Bree Serif');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing Script');
+
+        body {
+            background-color: linen;
+        }
+
+        h2 {
+            font-family: 'Abril Fatface', sans-serif;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            font-family: 'Crimson Pro', sans-serif;
+            border: 1px solid #888;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .var {
+            width: 100px;
+        }
+
+        .label {
+            width: 800px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Champion Data Dictionary</h2>
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Variable</th>
+                <th>Variable Label</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="var">champion_name</td>
+                <td class="label">Names of the champions in League of Legend</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="var">appearance_c</td>
+                <td class="label">Number of appearances of the champion</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="var">pick</td>
+                <td class="label">Rate of champions being picked <br>
+                    Number of appearances of the champion / Number of all games * 100%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="var">ban</td>
+                <td class="label">Rate of champions being banned <br>
+                    Number of appearances of the champion / Number of all games * 100%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="var">rate_c</td>
+                <td class="label">Winning percentage with the champion<br>
+                    Number of games won with the champion / Number of all games with the champion * 100% </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="var">total_kill_c</td>
+                <td class="label">Number of kills by the champion in all games it appeared</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="var">average_kill_c</td>
+                <td class="label">Average number of kills by the champion in each game it appeared<br>
+                    Number of kills in all games the champion appeared / Number of all games it appeared </td>
+            <tr>
+                <td>8</td>
+                <td class="var">total_assistance_c</td>
+                <td class="label">Number of assistances by the champion in all games it appeared</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="var">average_assistance_c</td>
+                <td class="label">Average number of assistances by the champion in each game it appeared<br>
+                    Number of assistances in all games the champion appeared / Number of all games it appeared </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="var">total_death_c</td>
+                <td class="label">Number of deaths by the champion in all games it appeared</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="var">average_death_c</td>
+                <td class="label">Average number of deaths by the champion in each game it appeared<br>
+                    Number of deaths in all games the champion appeared / Number of all games it appeared </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="var">kda_c</td>
+                <td class="label">A statistical value of the battle damage ratio among Kill, Death and Assistance, <br>
+                    used as an indication of the champion's performance on games<br>
+                    (Kill + Assistance) / Death
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="var">player_name</td>
+                <td class="label">Name of players who use the champion most in games</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

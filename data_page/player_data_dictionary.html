@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril Fatface');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson Pro');
+        @import url('https://fonts.googleapis.com/css2?family=Bree Serif');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing Script');
+
+        body {
+            background-color: linen;
+        }
+
+        h2 {
+            font-family: 'Abril Fatface', sans-serif;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            font-family: 'Crimson Pro', sans-serif;
+            border: 1px solid #888;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .var {
+            width: 100px;
+        }
+
+        .label {
+            width: 800px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Player Data Dictionary</h2>
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Variable</th>
+                <th>Variable Label</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="var">player_name</td>
+                <td class="label">Names of the players participating in 2021 LPL Summer Tournament</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="var">position</td>
+                <td class="label">The position played by the player</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="var">appearance_p</td>
+                <td class="label">Number of all games played by the player</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="var">total_kill_p</td>
+                <td class="label">Number of kills by the player in all games he played</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="var">average_kill_p</td>
+                <td class="label">Average number of kills by the player in each game he played<br>
+                    Number of kills in all games he played / Number of all games he played
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="var">total_assistance</td>
+                <td class="label">Number of assistances by the player in all games he played</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="var">average_assistance</td>
+                <td class="label">Average number of assistances by the player in each game he played<br>
+                    Number of assistances in all games he played / Number of all games he played
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="var">total_death_p</td>
+                <td class="label">Number of deaths by the player in all games he played</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="var">average_death_p</td>
+                <td class="label">Average number of deaths by the player in each game he played<br>
+                    Number of deaths in all games he played / Number of all games he played
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="var">kda</td>
+                <td class="label">A statistical value of the battle damage ratio among Kill, Death and Assistance, <br>
+                    used as an indication of a player's performance on games<br>
+                    (Kill + Assistance) / Death
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="var">average_money_p</td>
+                <td class="label">Average number of gold obtained by the player in each game he played <br>
+                    Number of gold obtained in all games he played / Number of all games he played</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="var">average_farm</td>
+                <td class="label">Average number of enemy units killed by the player in each game he played <br>
+                    Number of enemy units killed in all games he played / Number of all games he played</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="var">average_ward_p</td>
+                <td class="label">Average number of sight wards placed by the player in each game he played <br>
+                    Number of sight wards placed in all games he played / Number of all games he played
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class="var">average_wardkill_p</td>
+                <td class="label">Average number of sight wards excluded by the player in each game he played <br>
+                    Number of sight wards excluded in all games he played / Number of all games he played
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="var">average_fight</td>
+                <td class="label">Average frequency of the player's participation in each game he played <br>
+                    used to reflect the player's contribution to the team in each game he played <br>
+                    (Kill + Assistance) / Total team kill * 100%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class="var">mvp</td>
+                <td class="label">Number of times the player get Most Valuable Player</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class="var">money_excess</td>
+                <td class="label">The economic gap between the player and his counterpart opponent <br>
+                    The gold obtained by the player - The gold obtained by the counterpart opponent</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class="var">damage</td>
+                <td class="label">The player's damage to the enemy as a percentage of the damage done to the enemy by
+                    the whole team <br>
+                    Total damage dealt by the player to the enemy champions / Total damage dealt by the whole team *
+                    100%</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class="var">economic</td>
+                <td class="label">The player's economy as a percentage of the economy of the whole team <br>
+                    The gold obtained by the player / The gold obtained by the whole team * 100%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
